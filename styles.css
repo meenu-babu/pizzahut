@@ -1,0 +1,194 @@
+body
+{
+    margin:0;
+    padding:0;
+    width: 100%;
+    background-color: rgb(229, 237, 245);
+}
+
+.header_container
+{
+    
+    display:flex;
+    justify-content: space-between;
+    background-color:rgb(164, 23, 23);
+} 
+
+.nav_container ul
+{
+   
+        list-style-type: none;
+        display: flex;
+        padding:10px;
+        margin: 40px;
+   
+        
+}
+
+
+.nav_container a {
+    text-decoration: none;
+    color: hsl(0, 3%, 94%); 
+    font-size: 22px;
+    font-weight: bold;
+    padding: 40px;
+    transition: color 0.3s ease;
+    
+}
+.nav_container a:hover{
+    color:rgb(247, 207, 7);
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav_container ul li a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    
+
+    .nav_container ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav_container ul li a {
+        font-size: 18px;
+    }
+}
+.banner_container {
+    width: 100vw; 
+   
+    overflow: hidden;
+   
+   
+}
+.banner_container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1
+{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.items_container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    padding: 20px;
+    justify-items: center; 
+    background-color: white;
+}
+.items_div {
+    position: relative;
+    width: 100%; 
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px; 
+    box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.1);
+}
+
+.items_div:nth-child(1) {
+    background-image: url('https://www.homeruninnpizza.com/wp-content/uploads/2023/02/CheeseLovers_MedieBlock-376x376.jpg');
+}
+
+.items_div:nth-child(2) {
+    background-image: url('https://cdn.uengage.io/uploads/5/image-3428-1671268938.jpeg');
+}
+
+.items_div:nth-child(3) {
+    background-image: url('https://ca.ooni.com/cdn/shop/articles/20220211142645-margherita-9920.jpg?crop=center&height=915&v=1661341987&width=1200');
+}
+
+.items_div:nth-child(4) {
+    background-image: url('https://static.wixstatic.com/media/597497_39dfa709d3d845eeaf43eb692e93b31b~mv2.jpg/v1/fill/w_642,h_502,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Image-empty-state.jpg');
+}
+.items_div:nth-child(5) {
+    background-image: url('https://www.allrecipes.com/thmb/qZ7LKGV1_RYDCgYGSgfMn40nmks=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-24878-bbq-chicken-pizza-beauty-4x3-39cd80585ad04941914dca4bd82eae3d.jpg');
+}
+.items_div:nth-child(6) {
+    background-image: url('https://www.thursdaynightpizza.com/wp-content/uploads/2022/06/veggie-pizza-side-view-out-of-oven-720x480.png');
+}
+.items_div:nth-child(7) {
+    background-image: url('https://www.foulmouthgourmet.com/wp-content/uploads/2023/11/IMG_2877.jpg');
+}
+.items_div:nth-child(8) {
+    background-image: url('https://www.perfectitaliano.com.au/content/dam/perfectitaliano-aus/recipe/0_desktop/Desktop-Smoked-Salmon-Capers-Pizza.jpg');
+}
+
+.items_div h3 {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;
+    color:hsl(0, 3%, 94%);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    margin: 0px;
+}
+
+.items_div button {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    padding: 10px ;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.items_div button:hover {
+    background-color: rgb(27, 122, 60);
+}
+@media (max-width: 1024px)and (min-width: 769px) {
+    .items_container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+@media (max-width:768px){
+    .items_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.footer_container {
+    display:flex;
+    justify-content: center;  
+    align-items: center;
+    position: relative;
+    background-color: rgb(72, 70, 70);
+    color:white;
+    font-size: 20px;
+    padding:30px;
+
+}
+.footer_container ul{
+    position: absolute;
+    
+    margin:0;
+   bottom:20px;
+
+}
+.footer_container p{
+    font-size: 22px;
+    margin:40px 0;
+}
+.footer_container ul a{
+    text-decoration: none;
+    color: #f3f1f1;
+    font-size: 14px;
+    margin:30px;
+    transition: color 0.3s ease;
+}
+
+.footer_container a:hover {
+    color: rgb(247, 207, 7);
+}
